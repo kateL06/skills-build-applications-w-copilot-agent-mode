@@ -39,6 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+# Local apps
+# Register project apps
+INSTALLED_APPS += [
+    'users.apps.UsersConfig',
+    'activities.apps.ActivitiesConfig',
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
